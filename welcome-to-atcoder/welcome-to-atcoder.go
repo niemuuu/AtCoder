@@ -1,4 +1,7 @@
-/* https://atcoder.jp/contests/abs/tasks/practice_1 */
+/*
+PracticeA - はじめてのあっとこーだー（Welcome to AtCoder）
+https://atcoder.jp/contests/abs/tasks/practice_1
+*/
 
 package main
 
