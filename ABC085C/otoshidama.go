@@ -31,7 +31,7 @@ func main() {
 
 LOOP:
 	for a := 0; a <= n; a++ {
-		for b := 0; b <= n; b++ {
+		for b := 0; b <= n-a; b++ {
 			c := n - (a + b)
 			if c < 0 {
 				continue
