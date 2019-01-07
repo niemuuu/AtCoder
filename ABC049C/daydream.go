@@ -14,13 +14,6 @@ import (
 
 var sc = bufio.NewScanner(os.Stdin)
 
-func readLine() string {
-	if !sc.Scan() {
-		return ""
-	}
-	return sc.Text()
-}
-
 func reverse(s string) string {
 	rs := []rune(s)
 	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
@@ -30,7 +23,9 @@ func reverse(s string) string {
 }
 
 func main() {
-	s := reverse(readLine())
+	var s string
+	fmt.Scan(&s)
+	s = reverse(s)
 	result := "NO"
 
 	// "dream", "dreamer", "erase", "eraser" の逆
